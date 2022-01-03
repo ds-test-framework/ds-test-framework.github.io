@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Unit testing
-nav_order: 2
+nav_order: 4
 has_children: true
 permalink: /docs/unit-testing
 ---
