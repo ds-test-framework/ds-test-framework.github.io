@@ -27,7 +27,7 @@ url: "https://ds-test-framework.github.io" # the base hostname & protocol for yo
 domain: ds-test-framework.github.io
 
 # Build settings
-theme: "just-the-docs"
+# theme: "just-the-docs"
 plugins:
   - jekyll-feed
 remote_theme: pmarsceill/just-the-docs
