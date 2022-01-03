@@ -15,7 +15,9 @@ permalink: /
 The testing framework allows developers to test implementation of distributed protocols. 
 {: .fs-6}
 
-The testing framework can be used to write unit tests, run comprehensive exploration strategy based testing and to visualize the working of a distributed protocol. 
+The testing framework can be used to write unit tests, run comprehensive exploration strategy based testing and to visualize the working of a distributed protocol.
+
+[View on GitHub](https://github.com/ds-test-framework/scheduler){: .btn .btn-purple}
 
 ---
 
@@ -25,3 +27,13 @@ The testing framework can be used to write unit tests, run comprehensive explora
 
 1. Change implementation codebase to communicate with **Imperium**
 2. Run replicas and **Imperium**
+
+There are different modes to run the tool.
+
+1. [_Unit testing_]({% link docs/unit_testing/index.md %})
+2. [_Exploration testing_]({% link docs/exploration_testing/index.md %})
+3. [_Visualization_]({% link docs/visualization.md %})
+
+---
+
+## About
