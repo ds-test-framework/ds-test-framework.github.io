@@ -77,4 +77,3 @@ Faults can be of two types. Benign or byzantine,
 Replicas execute the protocol after an initial trigger (a client request), and Messages are exchanged between replicas. The events of the replicas along with the happens before ordering acts as a snapshot of this execution. An execution is then `H = (E, <)` where `E` is the set of events and `<` is the happens before relation.
 
 ---
-Next: [Unit testing]({% link docs/unit_testing/index.md %})

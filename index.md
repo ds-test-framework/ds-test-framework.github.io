@@ -23,13 +23,11 @@ The testing framework can be used to write unit tests, run comprehensive explora
 
 ## Getting Started
 
-**Imperium** can be run in different modes:
+**Imperium** acts as a central monitor that can control all the replicas. This requires the developer to change the implementation being tested. See [instrumentation]({% link docs/instrumentation.md %}) to understand the changes that are required. **Imperium** can be used for:
 
-1. [_Unit testing_]({% link docs/unit_testing/index.md %})
+1. [_Unit testing_]({% link docs/unit_testing/unit_testing.md %})
 2. [_Exploration testing_]({% link docs/exploration_testing/index.md %})
 3. [_Visualization_]({% link docs/visualization.md %})
-
-In all the modes, **Imperium** acts as a central monitor that can control all the replicas. This requires the developer to change the implementation being tested. See [instrumentation]({% link docs/instrumentation.md %}) to understand the changes that are required.
 
 ---
 
