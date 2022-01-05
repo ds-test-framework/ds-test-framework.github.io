@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Unit testing
+title: Unit Tests
 nav_order: 4
 has_children: true
-permalink: /docs/unit-testing
+permalink: /docs/testing
 ---
 
 # Unit testing
@@ -38,4 +38,4 @@ initial.On(LinkDown(A, B), "Success")
 
 The above example is meant to give an idea of unit testing in the distributed context. Since unit tests are specific to the implementation and protocol being testing, **Imperium** exports [`testlib`](https://pkg.go.dev/github.com/ds-test-framework/scheduler@v1.9.4/testlib) as a `go` library which can be used to describe unit tests. This allows developers to maintain unit tests as part of their implementation codebase.
 
-Refer [Library Usage]({% link docs/unit_testing/testlib.md %}) for documentation related to using the library and [Writing Tests]({% link docs/unit_testing/writing_tests.md %}) for documentation about writing unit tests.
+Refer [Library Usage]({% link docs/tests/testlib.md %}) for documentation related to using the library and [Writing Tests]({% link docs/tests/writing_tests.md %}) for documentation about writing unit tests.

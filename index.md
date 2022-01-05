@@ -25,9 +25,9 @@ The testing framework can be used to write unit tests, run comprehensive explora
 
 **Imperium** acts as a central monitor that can control all the replicas. This requires the developer to change the implementation being tested. See [instrumentation]({% link docs/instrumentation.md %}) to understand the changes that are required. **Imperium** can be used for:
 
-1. [_Unit testing_]({% link docs/unit_testing/unit_testing.md %})
-2. [_Exploration testing_]({% link docs/exploration_testing/index.md %})
-3. [_Visualization_]({% link docs/visualization.md %})
+1. [Unit testing]({% link docs/tests/tests.md %})
+2. [Exploration testing]({% link docs/exploration_testing/index.md %})
+3. [Visualization]({% link docs/visualization.md %})
 
 ---
 
