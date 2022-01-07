@@ -7,10 +7,11 @@ nav_order: 2
 
 # Unit Tests
 
-A unit test is represented by a `TestCase` object. Instantiate a `TestCase` object by specifying a `Name`, `Timeout` and a `HandlerCascade`
+A unit test is represented by a `TestCase` object. Instantiate a `TestCase` object by specifying a `Name`, `Timeout`, `StateMachine` and a `HandlerCascade`
 
 - `Name` is unit for a particular test scenario
 - `Timeout` is the maximum duration after which the test is terminated
+- `StateMachine` to assert a property
 - `HandlerCascade` implements an interface for handling each event.
 
 Additionally a `SetupFunc` can be specified which will can make initialization calls to the replicas. This can be used to prep the replicas for the test scenario being executed.
@@ -34,9 +35,7 @@ Handlers are invoked with an `Event` and a `Context` object which is meant for h
 type HandlerFunc func(*Event, *Context) ([]*Message, bool)
 ```
 
-The boolean value should be `true` if the `HandlerFunc` handled the `Event` and `false` otherwise.
-
-`HandlerCascade` should be invoked with a `StateMachine` object and has the following functions,
+The boolean value should be `true` if the `HandlerFunc` handled the `Event` and `false` otherwise. `HandlerCascade` interface is as follows,
 
 - `HandleEvent(*Event, *Context) []*Message`: Invoked by `testlib` for every event that **Imperium** receives.
 - `AddHandler(HandlerFunc)`: Adds a `HandlerFunc` to the cascade
